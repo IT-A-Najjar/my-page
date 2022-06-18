@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    
+    <div id="demo" title="Demo" style="background-color: blueviolet;">
+        javaScript can change HTML Attripute Values
+    </div>
+    <br>
+    <button onclick="document.getElementById('demo').style='background-color:blue'">
+        change background
+    </button>
+    <br><br><br>
+    <p id="demo1">idsuffjnkdlvzfvn</p>
+    <button type="button" onclick="document.getElementById('demo1').style.fontSize='25px'">
+        click me
+    </button>
+    <br><b><br>
+    <p id="demo2">
+        isdkjlknvml
+    </p>
+    <button onclick="document.getElementById('demo2').style.display='none'">
+        mm
+    </button>
+    <br><br><br><br>
+    <p id="demo3" style="display: none;">isudvjknzxcjld</p>
+    <button type="button" onclick="document.getElementById('demo3').style.display='block'">mi</button>
+
+    <p id="demo4"></p>
+    <script>
+        document.getElementById("demo4").innerHTML = 5+20;
+    </script>
+    <hr>
+    <h2>My First Web Page</h2>
+    <p>my first paragraph.</p>
+    <script>
+        
+       var x=true;
+       let y="kuvjh";
+       var array=[1,2,3];
+       let objectTypeVariable={
+           'ahmed': 1,
+           'abdulhamed':2,
+           'najjar':3
+       }
+       
+       console.log(objectTypeVariable.ahmed);
+       var stringArray=["\"this\"is double qoutes"];
+       console.log(stringArray[0]);
+    </script>
+    <p id="demo5"></p>
+    <script>
+        let carName="sonata",person="najjar",price=4500,aa;
+        document.getElementById("demo5").innerHTML = person+" "+ carName+ " " +price+" "+aa;
+    </script>
+    <p id="demo6"></p>
+    <script>
+        const car=["saba","santafy","bmw"];
+        car[0]="mercids"
+        car.push("audi");
+        car.pop("");
+        document.getElementById("demo6").innerHTML=car;
+    </script>
+
+    <script>
+        const person={
+            firstname:"abdullah",
+            lastname:"najjar",
+            id:631,
+            function :function(){
+                return this.firstname+" "+this.lastname+" "+this.id
+            }
+            
+        }
+    </script>
+    <p id="demo7"></p>
+    <button onclick="document.getElementById('demo7').innerHTML=Date()">time</button>
+    <br><br><br><br>
+    <button onclick="this.innerHTML=Date()">time</button>
+    <br><br><br>
+    <p id="demo8"></p>
+    <button onclick="displaydate()">time</button>
+    <script>
+        function displaydate(){
+            document.getElementById('demo8').innerHTML=Date();
+        }
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

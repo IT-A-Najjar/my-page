@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <button onclick="myfunction()">click</button>
+    <p id="demo1" style="background-color: blueviolet;">hello my world my live my tae</p>
+    <script>
+       /* function myfunction(){
+            let text=document.getElementById("demo1").innerHTML;
+            document.getElementById("demo1").innerHTML=text.replace(/my/g,"your")
+        }*/
+    </script>
+    <br><br><br><br>
+    <button onclick="myfunction2()">TO UPPER</button>
+    <p id="demo2">Hello world</p>
+    <script>
+        /*function myfunction2(){
+            let text =document.getElementById("demo2").innerHTML;
+            document.getElementById("demo2").innerHTML=text.toUpperCase();
+        }*/
+    </script>
+    <br><br><br>
+    <p id="demo3"></p>
+    <script>
+        //let first="hello"
+        //let last="world"
+        //document.getElementById("demo3").innerHTML=first.concat(" ",last);
+    </script>
+    <br><br><br>
+    <p id="demo4"></p>
+    <script>
+       // let first="     hello     "
+       // let befor = first.trim();
+       // document.getElementById("demo4").innerHTML=befor.length;
+    </script>
+    <p id="dmo5" style="background-color: blueviolet; color: white;"></p>
+    <script>
+        let num=5;
+        let text=num.toString();
+        let aa=text.padStart(4,0)
+        document.getElementById("dmo5").innerHTML=aa.padEnd(7,0);
+    </script>
+    <br><br><br>
+    <p id="demo6"></p>
+    <script>
+        let text1 ="abdulah abo albaraa najjar";
+        const myarr =text1.split(" ");
+        text="";
+        for(let i=0 ; i<myarr.length;i++){
+            text += myarr[i]+"<br>"
+        }
+        document.getElementById("demo6").innerHTML=text;
+    </script>
+    <p id="demo7" style="background-color: brown ; color: chartreuse;"></p>
+    <script>
+        let text2 ="abdulah abo albaraa najjar";
+        document.getElementById("demo7").innerHTML=text2.includes("abo");
+    </script>
+    <br><br><br><br>
+    <p id="demo8"></p>
+    <script>
+        const arr=["najjar","alhusen","almohamed","alkhalf"];
+        document.getElementById("demo8").innerHTML=arr.join(" ");
+    </script>
+    <br><br><br><br>
+    <p id="demo9"></p>
+    <script>
+        let x=65;
+        switch(x){
+            case 0:
+                text="off";
+                break;
+            case 1:
+                text="on";
+                break;
+            default:
+                text="error";
+        }
+        document.getElementById("demo9").innerHTML=text;
+    </script>
+    
+</body>
+</html>
